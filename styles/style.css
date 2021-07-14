@@ -104,6 +104,19 @@ p {
     color: var(--secondary-color);
 }
 
+nav {
+    padding: 10px 20px;
+    background: var(--primary-color);
+}
+
+.nav-icon {
+    font-size: 34px;
+}
+
+.nav-icon:hover {
+    color: var(--primary-color);
+}
+
 @media (max-width: 800px) {
     h1 {
         font-size: 46px;
