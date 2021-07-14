@@ -42,14 +42,19 @@ h1 {
     font-size: 86px;
 }
 
-.hero h2 {
+h2 {
     font-size: 40px;
     margin-top: 100px;
+    color: var(--primary-color);
 }
 
 h3 {
     font-size: 24px;
     margin: 30px 0;
+}
+
+.hero h2 {
+    color: black;
 }
 
 .btn {
@@ -66,76 +71,48 @@ h3 {
     color: var(--details-color);
 }
 
-.content .description {
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-}
-
-.content h2 {
-    color: var(--primary-color);
-    font-size: 40px;
-    margin-top: 90px;
-}
-
-.content img {
-    max-width: 500px;
-    height: auto;
-}
-
-.content p {
-    font-size: 18px;
-    line-height: 1.8;
-    padding: 0 30px;
-}
-
-.about {
-    padding: 140px 20px;
-    margin-top: 100px;
-}
-
-.about h1 {
-    font-family: var(--headin-font-family);
-    font-size: 76px;
-}
-
-.about p {
-    font-size: 18px;
-}
-
-.about img {
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-content {
+.description {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     padding: 30px;
 }
 
-@media (max-width: 700px) {
-    .hero h1 {
+img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 0 30px;
+}
+
+.content {
+    padding: 140px 20px;
+    margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+    h1 {
         font-size: 46px;
     }
     .hero h3 {
         font-size: 20px;
     }
-    .content p {
+    p {
         font-size: 20px;
         line-height: 1.5;
         padding: 0 5px;
     }
-    .content .col {
+    .col {
         margin: 0 10px;
     }
-    .about {
+    .content {
         text-align: center;
     }
-    .about h1 {
-        font-size: 56px;
-    }
-    .about-image {
+    img {
         margin-top: 30px;
     }
 }
