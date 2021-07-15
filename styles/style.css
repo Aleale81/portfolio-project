@@ -29,7 +29,7 @@ body {
 }
 
 .hero {
-    padding: 140px 20px;
+    padding: 100px 20px;
 }
 
 h1,
@@ -51,6 +51,18 @@ h2 {
 h3 {
     font-size: 24px;
     margin: 30px 0;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 0 30px;
 }
 
 .hero h2 {
@@ -77,18 +89,6 @@ h3 {
     padding: 30px;
 }
 
-img {
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    padding: 0 30px;
-}
-
 .content {
     padding: 140px 20px;
     margin-top: 100px;
@@ -109,12 +109,30 @@ nav {
     background: var(--primary-color);
 }
 
-.nav-icon {
-    font-size: 34px;
+li {
+    text-decoration: none;
+    display: inline;
+    padding-left: 16px;
+    line-height: 3.5;
 }
 
-.nav-icon:hover {
-    color: var(--primary-color);
+li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 150ms ease-in-out;
+}
+
+.nav-icon {
+    padding-left: 16px;
+    font-size: 34px;
+    color: var(--secondary-color);
+    transition: all 150ms ease-in-out;
+}
+
+.nav-icon:hover,
+li a:hover,
+li a.active {
+    color: var(--details-color);
 }
 
 @media (max-width: 800px) {
