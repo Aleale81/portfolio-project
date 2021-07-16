@@ -1,7 +1,6 @@
 /**
  *
 font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
 font-family: "Noto Sans TC", sans-serif;
  *
  * @format
@@ -44,7 +43,6 @@ h1 {
 
 h2 {
     font-size: 40px;
-    margin-top: 100px;
     color: var(--primary-color);
 }
 
@@ -90,7 +88,7 @@ p {
 }
 
 .content {
-    padding: 140px 20px;
+    padding: 100px 20px;
     margin-top: 100px;
 }
 
@@ -109,30 +107,46 @@ nav {
     background: var(--primary-color);
 }
 
-li {
+nav li {
     text-decoration: none;
     display: inline;
     padding-left: 16px;
     line-height: 3.5;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color: var(--secondary-color);
     transition: all 150ms ease-in-out;
 }
 
-.nav-icon {
+nav .nav-icon {
     padding-left: 16px;
     font-size: 34px;
     color: var(--secondary-color);
     transition: all 150ms ease-in-out;
 }
 
-.nav-icon:hover,
-li a:hover,
-li a.active {
+nav .nav-icon:hover,
+nav li a:hover,
+nav li a.active {
     color: var(--details-color);
+}
+
+footer {
+    margin-top: 80px;
+}
+
+footer .footer-icon a .icons {
+    font-size: 20px;
+}
+
+footer .footer-content {
+    margin-left: 60px;
+}
+
+footer .footer-link {
+    margin-right: 60px;
 }
 
 @media (max-width: 800px) {
@@ -152,8 +166,22 @@ li a.active {
     }
     .content {
         text-align: center;
+        padding-top: 50px;
     }
     img {
         margin-top: 30px;
+    }
+    .about-img {
+        max-width: 400px;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .footer-content {
+        margin-left: 0;
+    }
+    footer .footer-link {
+        margin-right: 0;
+        display: none;
     }
 }
