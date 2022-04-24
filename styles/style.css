@@ -78,9 +78,13 @@ nav .nav-icon {
     transition: all 150ms ease-in-out;
 }
 
+nav span {
+    font-size: 14px;
+}
+
 nav .nav-icon:hover,
 nav li a:hover,
-nav li a.active {
+nav a.active {
     color: var(--details-color);
 }
 
